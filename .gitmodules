@@ -1,6 +1,6 @@
 [submodule "api"]
 	path = api
-	url = ./api
+	url = https://github.com/pablopastorino/countries-api.git
 [submodule "app"]
 	path = app
-	url = ./app
+	url = https://github.com/pablopastorino/countries-app.git
