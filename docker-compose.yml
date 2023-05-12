@@ -1,0 +1,17 @@
+version: '3'
+services:
+  angular-app:
+    build: ./app
+    ports:
+      - "4200:4200"
+  nestjs-api:
+    build: ./api
+    ports:
+      - "3000:3000"
+  tests:
+      image: node:14-alpine
+      working_dir: /app
+      volumes:
+        - ./app:/app
+        - ./api:/api
+      command: npm run test
